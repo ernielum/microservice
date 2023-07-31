@@ -4,9 +4,11 @@
  The microservice is given deadlines and returns a reminder of those that are upcoming.
 
  ## REQUESTING Data
- Your program must create a **.json** file that is located in the **same directory** as the Python file in this repository. The microservice is configured to accept a .json file named **deadlines.json**. Note that the directory and name of the .json file can be edited accordingly.
+ Your program must create a **.json** file that is located in the **same directory** as the Python file in this repository. The microservice is configured to accept a .json file named **deadlines.json**. Note that the directory and name of the .json file can be edited accordingly. See the following screenshot for an example call that must be made in order for the microservice to respond.
 
- The .json file must contain a **dictionary** where the key is a date in the following string format: **YYYY-MM-DD**. Its value is a **list of tasks**. In other words, the dictionary will hold date keys and their values are the list of tasks whose deadlines are on that date. See the following example:
+ ![image](https://github.com/ernielum/microservice/assets/101778511/73d09af2-94a9-4439-9781-f6349f649a66)
+
+ The .json file must contain a **dictionary** where the key is a date in the following string format: **YYYY-MM-DD**. Its value is a **list of tasks**. In other words, the dictionary will hold date keys and their values are the list of tasks whose deadlines are on that date. See the following example of how the .json file should look like after the example call:
 
 ![image](https://github.com/ernielum/microservice/assets/101778511/41127bc0-f6fa-44c1-aa28-486e14d9ba4b)
 
@@ -19,6 +21,8 @@
  Given the above tasks in the previous screenshot, the microservice will return the following .json file if ran on **07-31-2023**:
 
  ![image](https://github.com/ernielum/microservice/assets/101778511/5ca8eab8-9b08-45ea-89c9-ea901ec39f95)
+
+Notice how any deadlines that are beyond 3 days are not included in the returned data.
 
  ## UML Sequence Diagram 
  
