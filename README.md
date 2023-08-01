@@ -25,7 +25,7 @@
 ![image](https://github.com/ernielum/microservice/assets/101778511/c2c690de-3957-4723-9894-db1be9d85c1f)
 
 
-Notice how any deadlines that are beyond 3 days are not included in the returned data.
+Notice how any deadlines that are beyond 3 days are not included in the returned data. Your program should include a way to open **reminder.json** since that is how the microservice will return data to you.
 
  ## UML Sequence Diagram 
 
